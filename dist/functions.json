@@ -1,0 +1,67 @@
+{
+    "functions": [
+        {
+            "id": "TEST",
+            "name": "TEST",
+            "parameters": [
+                {
+                    "name": "args",
+                    "optional": true,
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "id": "VLOOKUP",
+            "name": "VLOOKUP",
+            "parameters": [
+                {
+                    "dimensionality": "matrix",
+                    "name": "range",
+                    "type": "any"
+                },
+                {
+                    "name": "value",
+                    "type": "any"
+                },
+                {
+                    "name": "index",
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "高级vlookup。",
+            "id": "SUPER_VLOOKUP",
+            "name": "SUPER_VLOOKUP",
+            "parameters": [
+                {
+                    "description": "查找范围",
+                    "dimensionality": "matrix",
+                    "name": "range",
+                    "type": "any"
+                },
+                {
+                    "description": "如果找到匹配行，要返回结果的列",
+                    "name": "resultIndex",
+                    "type": "number"
+                },
+                {
+                    "description": "如果找不到匹配行，返回的默认值",
+                    "name": "defaultValue",
+                    "type": "any"
+                },
+                {
+                    "description": "匹配条件。每个匹配条件由3个值构成：匹配列、匹配值、匹配模式（0：完全相等；1：字符串包含）。",
+                    "name": "lookupArgs",
+                    "optional": true,
+                    "repeating": true,
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        }
+    ]
+}
