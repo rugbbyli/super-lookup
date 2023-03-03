@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v3.6.0
+      with:
+        node-version: 18.14
+    - name: install deps
+      run: npm install
+    - name: build
+      run: npm run build
