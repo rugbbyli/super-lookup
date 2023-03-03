@@ -7,9 +7,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup Node.js environment
@@ -20,3 +18,11 @@ jobs:
       run: npm install
     - name: build
       run: npm run build
+    - name: upload artifact
+      uses: actions/upload-pages-artifact@v1.0.7
+      with:
+        path: dist/
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/deploy-pages@v1.2.4
