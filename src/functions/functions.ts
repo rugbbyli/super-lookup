@@ -42,19 +42,14 @@ export function vlookup(range: any[][], value: any, index: number) {
  * @returns 匹配到的内容或默认值
  */
 export function super_vlookup(range: any[][], resultIndex: number, defaultValue: any, lookupArgs: any[]) {
-    console.log("range:" , range)
-    console.log("functions:", lookupArgs)
     const args = unpackLookupArgs(lookupArgs)
-    console.log("args:", args)
     if(args.length == 0) return 
     for(let r = 0; r < range.length; r++) {
         const row = range[r]
         const matches = args.filter(([index, value, mode]) => {
             return isMatch(row[index-1], value, mode)
         })
-        console.log(`row ${row} matchs ${matches.length}`)
         if(matches.length == args.length) {
-            console.log(`found at row ${row}, return ${row[resultIndex-1]}`)
             return row[resultIndex-1]
         }
     }
