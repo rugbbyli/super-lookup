@@ -14,8 +14,9 @@ jobs:
       uses: actions/setup-node@v3.6.0
       with:
         node-version: 18.14
+        cache: npm
     - name: install deps
-      run: npm install
+      run: npm ci
     - name: build
       run: npm run build
     - name: upload artifact
