@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>6caf4174-d308-423c-8b94-9aebe999e30d</Id>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>Rugbbyli</ProviderName>
   <DefaultLocale>zh-CN</DefaultLocale>
   <DisplayName DefaultValue="super-lookup"/>
@@ -91,10 +91,7 @@
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://rugbbyli.github.io/super-lookup/functions.js"/>
         <bt:Url id="Functions.Metadata.Url" DefaultValue="https://rugbbyli.github.io/super-lookup/functions.json"/>
-        <bt:Url id="Functions.Page.Url" DefaultValue="https://rugbbyli.github.io/super-lookup/functions.html"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://rugbbyli.github.io/super-lookup/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://rugbbyli.github.io/super-lookup/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="LY"/>
