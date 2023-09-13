@@ -8,7 +8,7 @@ public static class SuperVLookup
     public static double sum(double a, double b) => a + b;
     
     /// <summary>
-    /// super vlookup
+    /// 类似vlookup，但根据多个条件查找（比如查找同时满足『第一列值是AAA、第二列值包含bbb』的行的第三列的内容）。
     /// </summary>
     /// <param name="range">查找范围</param>
     /// <param name="resultIndex">如果找到匹配行，要返回结果的列</param>
