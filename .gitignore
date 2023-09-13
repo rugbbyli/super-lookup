@@ -1,4 +1,8 @@
 node_modules/
 .vscode/
-lib/
+src/super-lookup-js/lib/
+src/super-lookup/.idea
+src/super-lookup/bin
+src/super-lookup/obj
 *.log
+**/.DS_Store
