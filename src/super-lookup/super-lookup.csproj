@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="ExcelDna.AddIn" Version="1.7.0-rc6" />
+      <PackageReference Include="ExcelDna.Registration" Version="1.7.0-rc6" />
     </ItemGroup>
 
 </Project>
