@@ -12,4 +12,13 @@
       <PackageReference Include="ExcelDna.Registration" Version="1.7.0-rc6" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="super-lookup-AddIn.dna">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="super-lookup-AddIn64.dna">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
